@@ -79,9 +79,11 @@ nav ul li a {
     width: 200px;
 }
 
-.resource p {
+.resource li {
     font-size: 14px;
     color: #666;
+    margin-top: 10px;
+    margin-left: 20px;
 }
 
 h3{
