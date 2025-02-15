@@ -15,19 +15,63 @@ header {
     padding: 10px 0;
 }
 
+nav {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
 nav ul {
-    list-style-type: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 20px;
+    position: relative;
 }
 
 nav ul li a {
-    color: #fff;
+    display: block;
+    padding: 10px 20px;
+    color: white;
     text-decoration: none;
-    font-weight: bold;
+}
+
+nav ul li:hover {
+    background-color: #555;
+}
+
+nav ul ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul ul li {
+    width: 150px;
+}
+
+nav ul ul li a {
+    padding: 10px;
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul ul li:hover {
+    background-color: #666;
+}
+
+nav ul li:hover > ul {
+    display: block;
 }
 
 #title {
@@ -51,6 +95,21 @@ nav ul li a {
     height: 150px;
 }
 
+#Imagemdinamica {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin: 20px 0;
+}
+
+#dynamicImage {
+    top: 0;
+    left: 0;
+    width: 40vw;
+    height: 40vh;
+    object-fit: cover;
+}
+
 #formatacoes{
     margin: 30px 30%;
 }
@@ -64,6 +123,37 @@ nav ul li a {
     margin-top: 10px;
 }
 
+#links{
+    margin: 30px 30%;
+}
+
+#links h4{
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+#links p{
+    margin-top: 10px;
+}
+
+#Ireprodutor{
+    margin: 30px 30%;
+}
+
+
+#downloads{
+    margin: 30px 31%;
+}
+
+#downloads h4{
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+#downloads p{
+    margin-top: 10px;
+}
+
 #resources {
     display: flex;
     justify-content: center;
@@ -72,16 +162,30 @@ nav ul li a {
 }
 
 .resource {
-    background-color: #fff;
+    background-color: #d9ff00;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 200px;
 }
 
 .resource li {
     font-size: 14px;
-    color: #666;
+    color: #3f3f3f;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.resource dd {
+    font-size: 14px;
+    color: #3f3f3f;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.resource dt {
+    font-size: 14px;
+    color: #3f3f3f;
     margin-top: 10px;
     margin-left: 20px;
 }
@@ -91,7 +195,6 @@ h3{
     margin: 30px 30%;
 }
 
-/* Estilos para o rodapé */
 footer.footer {
     background-color: #333;
     color: #fff;
@@ -129,3 +232,5 @@ footer .social-links li a {
 footer .social-links li a:hover {
     text-decoration: underline;
 }
+
+

@@ -7,20 +7,25 @@
     <link rel="icon" href="/FRONT/Fav.PNG" type="image/x-icon">
     <link rel="stylesheet" href="/FRONT/CSS/styles.css">
 
-    <title>Developer's book</title>
+    <title>Developer´s FRONT | Home</title>
 </head>
 <body>
     <!-- Menu -->
     <header>
         <section id="title">
-            <h1>Developer's book</h1>
+            <h1>Developer´s FRONT</h1>
         </section>
-
         <nav>
             <ul>
                 <li><a href="/FRONT/HTML/index.html">Home</a></li>
-                <li><a href="/FRONT/HTML/lists.html">Lists</a></li>
-                <li><a href="#">Links</a></li>
+                <li>
+                    <a href="#">Projetos das listas</a>
+                    <ul>
+                        <li><a href="#">Atividade HTML</a></li>
+                        <li><a href="#">Projeto 2</a></li>
+                        <li><a href="#">Projeto 3</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     </header>
@@ -74,9 +79,173 @@
 
     </section>
 
+    <!-- Formatações-->
+
+    <h3>Trabalhando com listas</h3>
+
+    <section id="resources">
+        <div class="resource">
+            <h2><b>Lista Ordenada</b></h2>
+            <ol type="I">
+                <li>Acordar</li>
+                <li>Ligar para o jõao</li>
+                <li>Tomar café</li>
+                <li>Escovar os dentes</li>
+                <li>Ir para a faculdade</li>
+                <li>Almoçar</li>
+                <li>Ir para o trabalho</li>
+                <li>Voltar para casa</li>
+                <li>Jantar</li>
+                <li>Dormir</li>
+            </ol>
+        </div>
+
+        <div class="resource">
+            <h2><b>Lista não Ordenada</b></h2>
+            <ul>
+                <li>Pão</li>
+                <li>Leite</li>
+                <li>Tomate</li>
+                <li>Alface</li>
+                <li>Manteiga</li>
+                <li>Arroz</li>
+                <li>Feijão</li>
+            </ul>
+        </div>
+
+        <div class="resource">
+            <h2><b>Minhas Linguagens Favoritas</b></h2>
+            <ol>
+                <li><b>NES</b>
+                    <ul>
+                        <li>Mario Bros
+                            <ul>
+                                <li>Mario Bros 3</li>
+                                <li>Mario: Lost Levels</li>
+                            </ul>
+                        </li>
+                        <li>Ninja Gaiden</li>
+                    </ul>
+                </li>
+                <li><b>SNES</b>
+                    <ul>
+                        <li>Mario</li>
+                        <li>Donkey Kong</li>
+                    </ul>
+                </li>
+                <li><b>PlayStation</b>
+                    <ul>
+                        <li>Final Fantasy</li>
+                        <li>Castlevania</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <section id="resources">
+        <div class="resource">
+            <h2><b>Minhas Linguagens Favoritas</b></h2>
+
+            <ol>
+                <li><b>Antigas</b>
+                    <ol type="a">
+                        <li>Cliper</li>
+                        <li>Visual Basic</li>
+                        <li>Fortran</li>
+                        <li>Delphi</li>
+                    </ol>
+                </li>
+                <li><b>Novas</b>
+                    <ol start="5" type="a"> 
+                        <li>PHP</li>
+                        <li>Python</li> 
+                        <li>JavaScript</li>
+                        <li>Kotlin</li>  
+                    </ol>
+                </li>
+            </ol>            
+
+        </div>
+
+        <div class="resource">
+            <h2><b>Lista de Definições</b></h2>
+            <dl>
+                <dt><b>HTML</b></dt>
+                <dd>&nbsp;&nbsp;&nbsp;Linguagem de marcação para a criação do conteúdo de um site.</dd>
+        
+                <dt><b>CSS</b></dt>
+                <dd>&nbsp;&nbsp;&nbsp;Linguagem de marcação para a criação do design de um site.</dd>
+        
+                <dt><b>JavaScript</b></dt>
+                <dd>&nbsp;&nbsp;&nbsp;Linguagem de programação para a criação de interatividade de um site.</dd>
+            </dl>
+        </div>
+    </section>
+
+    <!-- lINKS-->
+    <h3>Usando links externos</h3>
+
+    <section id="links">
+        <p>Você pode acessar meu <a href="https://github.com/altg77/bookdevs.git" target="_blank">repositorio no git hub</a>.</p>
+        <p>Você tambem pode acessar ao meu <a href="https://www.youtube.com/@felquinhas" target="_blank">canal no youtube</a>.</p>
+    </section>
+
+    <h3>Usando links internos</h3>
+    <section id="links">
+        <p>Esta é a pagina home do site. Se quiser, acesse tambem a <a href="/FRONT/HTML/outrapag.html" target="_blank">SECRET</a>.</p>
+        <p>Você também pode acessar a nossa <a href="/FRONT/HTML/noticias.html" target="_blank">página de notícias</a>.</p>
+    </section>
+
+    <h3>Usando para download</h3>
+    <section id="downloads">
+        <ul>
+            <li><a href="/FRONT/download/bv000173.pdf" download >Baixar o livro em PDF</a></li>
+            <li><a href="/FRONT/download/bv000015.zip" download >Livro compactado em ZIP</a></li>
+        </ul>
+    </section>
+
+    <!-- IMAGEM E AUDIO-->
+
+    <h3>Imagem Dinâmica</h3>
+    
+    <section id="Imagemdinamica">
+        <img id="dynamicImage" src="https://neilpatel.com/wp-content/uploads/2019/09/codigos-html-para-paginas-web-1-1200x675.webp" alt="Imagem Dinâmica">
+    </section>
+
+    <h3>Reproduzindo Áudio</h3>
+    <section id="Ireprodutor">
+        <audio controls>
+            <source src="/FRONT/audio/Iframe Zé da Manga [YOz7dsnjS8U].mp3" type="audio/mpeg">
+        </audio>
+    </section>
+
+    <!-- IVIDEO-->
+    <h3>Inserindo vídeos hospedados localmente</h3>
+
+    <section id="Ireprodutor">
+        <video controls>
+            <source src="/FRONT/video/videoplayback.mp4" type="video/mp4">
+        </audio>
+    </section>
+
+    <h3>Inserindo vídeos do youtube</h3>
+
+    <section id="Ireprodutor">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/5Hn58p-hYC0?si=n5MqZbDWjQyLu_u8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+    <h3>Inserindo vídeos do Vimeo</h3>
+
+    <section id="Ireprodutor">
+        <iframe src="https://player.vimeo.com/video/1001304099?h=2f6b45d0d2&color=1009ff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/1001304099">Daniel Really Suits You</a> from <a href="https://vimeo.com/brinkcreative">BRINK</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+    </section>
+
+    <!-- Cabeçalho-->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Dev books.</p>
+            <p>&copy; 2025 Developer´s FRONT. Tiago Andrade</p>
         </div>
     </footer>
 
